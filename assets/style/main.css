@@ -150,18 +150,24 @@ body {
 #delivery .box {
     border-radius: 10px;
     width: 100%;
+    height: 250px;
     background-image: url("../img/restaurant_cover.jpg");
     background-repeat: no-repeat;
 }
 
-#delivery h4{
+#delivery h4 {
     color: whitesmoke;
 }
 
-#delivery span{
+#delivery span {
     color: floralwhite;
 }
 
-#delivery i{
+#delivery i {
     color: lightskyblue;
+}
+
+#find-us{
+    width: 100%;
+    background-image: url("../img/find_cover.jpg");
 }
