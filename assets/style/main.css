@@ -41,3 +41,19 @@ body {
 .img-2 {
     background-image: url('../img/slider/3.jpg');
 }
+
+.blog .carousel-indicators {
+    left: 0;
+    top: auto;
+    bottom: -40px;
+
+}
+
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+
