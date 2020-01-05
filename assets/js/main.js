@@ -1,5 +1,4 @@
 $(function () {
-    let try1 = 0;
     startCounter();
 
     function startCounter() {
