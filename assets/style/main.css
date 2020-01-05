@@ -168,4 +168,24 @@ body {
 
 #find-us {
     width: 100%;
+    background-image: url("../img/bg_loc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 540px){
+    #ph_med {
+        width: 100%;
+    }
+}
+
+#menu{
+    background-image: url("../img/bg_rec.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact{
+    text-align: center;
 }
