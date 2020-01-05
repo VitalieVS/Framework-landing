@@ -5,7 +5,6 @@ $(function () {
         getData();
     }
 
-
     function getData() {
         let cars = parseInt(document.getElementById("cars_val").innerHTML);
         let rest = parseInt(document.getElementById("rest_val").innerHTML);
@@ -52,4 +51,10 @@ $(function () {
     function hideScroll() {
         document.getElementById("scroll_up").style.display = "none";
     }
+
+    // to DO - Validation FORM - using regex
+   // function validateEmail() {
+       // var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      //  return re.test(String(email).toLowerCase());
+   // }
 });
