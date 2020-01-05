@@ -174,18 +174,26 @@ body {
 }
 
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 540px) {
     #ph_med {
         width: 100%;
     }
 }
 
-#menu{
+#menu {
     background-image: url("../img/bg_rec.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#contact{
+#contact {
     text-align: center;
+}
+
+#send_text:hover {
+    cursor: pointer;
+}
+
+#send_text {
+    margin-left: 45%;
 }
