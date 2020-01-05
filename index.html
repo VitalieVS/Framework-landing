@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#brief">BriefInfo</a>
@@ -88,7 +88,7 @@
                     <div class="card border-info shadow text-info p-3 my-card"><span class="fa fa-car"
                                                                                      aria-hidden="true"></span></div>
                     <div class="text-info text-center mt-3"><h4>Cars - for Delivery</h4></div>
-                    <div class="text-info text-center mt-2"><h1>869+</h1></div>
+                    <div class="text-info text-center mt-2"><h1 id="cars_val">869</h1></div>
                 </div>
             </div>
             <div class="col-md-3">
@@ -97,7 +97,7 @@
                                                                                            aria-hidden="true"></span>
                     </div>
                     <div class="text-success text-center mt-3"><h4>Restaurants</h4></div>
-                    <div class="text-success text-center mt-2"><h1>458+</h1></div>
+                    <div class="text-success text-center mt-2"><h1 id="rest_val">458</h1></div>
                 </div>
             </div>
             <div class="col-md-3">
@@ -106,7 +106,7 @@
                                                                                          aria-hidden="true"></span>
                     </div>
                     <div class="text-danger text-center mt-3"><h4>Positive Reviews</h4></div>
-                    <div class="text-danger text-center mt-2"><h1>69.493</h1></div>
+                    <div class="text-danger text-center mt-2"><h1 id="reviews">69493</h1></div>
                 </div>
             </div>
             <div class="col-md-3">
@@ -386,7 +386,7 @@
     </div>
 </section>
 
-<section id="contact">
+<footer id="contact">
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
     <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
         debitis distinctio dolores eveniet impedit non quae, quas sit voluptatibus voluptatum! Aut consequatur cumque
@@ -446,7 +446,10 @@
             </ul>
         </div>
     </div>
-</section>
+    <div class="scrollup fa-5x" href="#home" id="scroll_up"><i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </div>
+</footer>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -456,5 +459,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

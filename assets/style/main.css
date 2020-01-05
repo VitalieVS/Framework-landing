@@ -150,7 +150,7 @@ body {
 #delivery .box {
     border-radius: 10px;
     width: 100%;
-    background-image: url("../img/restaurant_cover.jpg");
+    background-image: url("../img/bg_deliv.jpg");
     background-repeat: no-repeat;
 }
 
@@ -196,4 +196,15 @@ body {
 
 #send_text {
     margin-left: 45%;
+}
+
+#scroll_up {
+    position: absolute;
+    left: 80%;
+    display: none;
+    margin-top: -150px;
+}
+
+#scroll_up:hover {
+    cursor: pointer;
 }
