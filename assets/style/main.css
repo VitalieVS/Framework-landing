@@ -2,20 +2,17 @@ h5 {
     font-size: 30px;
 }
 
-.nav-link {
-    font-size: 25px;
+.darken-grey-text {
+    color: #2E2E2E;
 }
 
-.navbar-brand {
-    font-size: 30px;
-    color: yellow !important;
+.navbar .dropdown-menu a:hover {
+    color: #616161 !important;
+}
+.darken-grey-text {
+    color: #2E2E2E;
 }
 
-.my-nav {
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-}
 
 .carousel-item {
     height: 100vh;
@@ -88,64 +85,7 @@ body {
     background-color: purple;
 }
 
-#myTabContent {
-    margin-top: 50px;
-}
 
-.menu_tab {
-    width: auto;
-    margin: 0 auto;
-}
-
-.nav-tabs .nav-item {
-    margin-bottom: -1px;
-}
-
-.nav-item a {
-    color: #333;
-}
-
-.menu_tab .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: white;
-    background-color: purple;
-    border-color: black;
-}
-
-.single_menu_list {
-    position: relative;
-    padding-left: 190px;
-    margin-bottom: 110px;
-}
-
-.single_menu_list img {
-    max-width: 30%;
-    position: absolute;
-    left: 0px;
-    top: 0;
-    border: 1px solid #ddd;
-    padding: 3px;
-    border-radius: 50%;
-    transition: .4s
-}
-
-.single_menu_list:hover img {
-    border-radius: 0;
-    transition: .4s
-}
-
-.single_menu_list h4 {
-    font-size: 20px;
-    border-bottom: 1px dashed #333;
-    padding-bottom: 15px;
-    margin-bottom: 10px;
-}
-
-.single_menu_list h4 span {
-    float: right;
-    font-weight: bold;
-    color: black;
-    font-style: italic;
-}
 
 #delivery .box {
     border-radius: 10px;

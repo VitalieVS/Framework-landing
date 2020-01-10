@@ -31,26 +31,7 @@ $(function () {
         document.getElementById("reviews").innerHTML = reviews;
         document.getElementById("rest_val").innerHTML = rest;
     }
-
-    $(window).scroll(function () {
-        if ($(window).scrollTop() + $(window).height() > $(document).height() - 150) {
-            showScroll();
-        } else {
-            hideScroll();
-        }
-    });
-
-    function showScroll() {
-        document.getElementById("scroll_up").style.display = "block";
-    }
-
-    $("div[href='#home']").click(function () {
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    });
-
-    function hideScroll() {
-        document.getElementById("scroll_up").style.display = "none";
-    }
+    
 
     // to DO - Validation FORM - using regex
    // function validateEmail() {
