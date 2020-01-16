@@ -132,6 +132,7 @@ $(function () {
 
     let order = [];
     let items = [];
+    let sum = 0;
 
     $(".form-check-input").change(function () {
         if (this.checked) {
@@ -148,6 +149,12 @@ $(function () {
         document.getElementById("cart_count").innerHTML = initialCount + 1;
         li.appendChild(document.createTextNode(item.id + " " + item.getAttribute("data-value") + " lei"));
         ul.appendChild(li);
+        suma(parseInt(item.getAttribute("data-value")));
+    };
+
+    const suma = (number) =>{
+        sum += number;
+        document.getElementById("sum_items").innerHTML = sum;
     };
 
     document.getElementById("hz").addEventListener("click", function (e) {

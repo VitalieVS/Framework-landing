@@ -39,6 +39,10 @@ mark {
     margin: 4px;
 }
 
+#sum_items{
+    color: black;
+}
+
 .nav-list li a:before {
     font: 400 21px/1 "Material Design Icons";
     color: #4d6de6;
