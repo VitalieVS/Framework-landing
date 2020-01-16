@@ -202,7 +202,7 @@ h5 {
     margin-bottom: 0;
 }
 
-#moon{
+#moon {
     color: black;
 }
 
@@ -223,7 +223,7 @@ h5 {
     margin-left: -40px;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: purple !important;
 }
 
@@ -370,7 +370,7 @@ h5 {
     #footer h5 {
         padding-left: 0;
         border-left: transparent;
-        padding-bottom: 0px;
+        padding-bottom: 0;
         margin-bottom: 10px;
     }
 }
