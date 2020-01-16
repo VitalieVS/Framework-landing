@@ -1,6 +1,5 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-/*home*/
 
 html {
     scroll-behavior: smooth;
@@ -203,6 +202,10 @@ h5 {
     margin-bottom: 0;
 }
 
+#moon{
+    color: black;
+}
+
 .section-title h4 {
     font-size: 40px;
     text-transform: capitalize;
@@ -218,6 +221,10 @@ h5 {
     bottom: 0;
     left: 50%;
     margin-left: -40px;
+}
+
+.btn-primary{
+    background-color: purple !important;
 }
 
 .section-title h4::before, .section-title h4::after {
@@ -291,10 +298,6 @@ h5 {
 
 #send_text:hover {
     cursor: pointer;
-}
-
-#send_text {
-    margin-left: 45%;
 }
 
 #footer {
