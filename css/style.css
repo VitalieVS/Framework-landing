@@ -1,6 +1,5 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -22,6 +21,11 @@ ol {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+mark{
+    background-color: transparent;
+    color: white;
 }
 
 .nav-list li a:before {

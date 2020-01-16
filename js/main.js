@@ -54,29 +54,34 @@ $(function () {
 
     const changeStyleToDark = () => {
         let navBar = document.querySelector(".navbar").className;
+
         document.querySelector(".navbar").className = navBar.replace("navbar-dark #7e57c2 deep-purple", "elegant-color-dark");
 
         //change text
 
         let text = document.querySelectorAll("a");
+
         let h = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+
         text.forEach(function (item) {
             item.style.color = "white";
         });
 
-        for (let i = 0 ;  i < h.length; i++){
+        for (let i = 0; i < h.length; i++) {
             h[i].style.color = "white";
         }
 
         //change div/sect
-       let section = document.querySelectorAll("section");
-        for (let i = 0 ;  i < section.length; i++){
+
+        let section = document.querySelectorAll("section");
+
+        for (let i = 0; i < section.length; i++) {
             section[i].style.backgroundColor = "black";
         }
 
         let div = document.querySelectorAll("div");
 
-        for (let i = 10 ;  i < div.length; i++){
+        for (let i = 10; i < div.length; i++) {
             div[i].style.backgroundColor = "black";
         }
 
@@ -86,30 +91,59 @@ $(function () {
 
         let headerLine = document.querySelectorAll(".headerLine");
 
-        for (let i = 0 ;  i < headerLine.length; i++){
-           headerLine[i].style.background = "white";
+        for (let i = 0; i < headerLine.length; i++) {
+            headerLine[i].style.background = "white";
         }
 
         //p
+
         let paragraph = document.querySelectorAll("p");
 
-        for (let i = 0 ;  i < paragraph.length; i++){
+        for (let i = 0; i < paragraph.length; i++) {
             paragraph[i].style.color = "white";
         }
 
         //i
+
         let ico = document.querySelectorAll("i");
 
-        for (let i = 0 ;  i < ico.length; i++){
+        for (let i = 0; i < ico.length; i++) {
             ico[i].style.color = "white";
         }
 
         //span
+
         let span = document.querySelectorAll("span");
 
-        for (let i = 1 ;  i < span.length; i++){
-           span[i].style.color = "white";
+        for (let i = 1; i < span.length; i++) {
+            span[i].style.color = "white";
         }
 
+        //label
+
+        let label = document.querySelectorAll("label");
+
+        for (let i = 0; i < label.length; i++) {
+            label[i].style.color = "white";
+        }
+    };
+
+    //Cart
+
+    let order = [];
+
+    $(".form-check-input").change(function () {
+        if (this.checked) {
+            updateCart(this);
+            console.log(order);
+        }
+    });
+
+    const updateCart = (item) => {
+        let initialCount = parseInt(document.getElementById("cart_count").innerHTML);
+        let items = [];
+        items.push(item.id + ":" + item.getAttribute("data-value"));
+        order.push(items);
+        document.getElementById("cart_count").innerHTML = initialCount + 1;
     };
 });
