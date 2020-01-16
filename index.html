@@ -40,35 +40,20 @@
             <ul class="navbar-nav ml-auto nav-flex-icons">
                 <li class="nav-item">
                     <div class="dropdown">
-                    <a class="nav-link waves-effect waves-light dropdown-toggle" data-toggle="dropdown">
-                        <mark id="cart_count">0</mark>
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                    <div class="dropdown-menu mr-5" style="margin-right: 30px;">
-                        <table class="table table-striped">
-                            <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <button>submit</button>
-                    </div>
+                        <a class="nav-link waves-effect waves-light dropdown-toggle" data-toggle="dropdown">
+                            <mark id="cart_count">0</mark>
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="text-center">
+                                <h4>Your items!</h4>
+                            </div>
+                            <ul class="cart_content text-center" id="hz">
+                            </ul>
+                            <div class="text-center">
+                                <button class="text-center" id="order_items">Order</button>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -192,8 +177,9 @@
                                     <h4>Capricioasa <span>$45</span></h4>
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="capricioasa" data-value="45">
-                                        <label class="form-check-label" for="capricioasa">
+                                        <input class="form-check-input" type="checkbox" value="" id="Capricioasa"
+                                               data-value="45">
+                                        <label class="form-check-label" for="Capricioasa">
                                             AddToCart
                                         </label>
                                     </div>
@@ -206,8 +192,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="diablo" data-value="25">
-                                        <label class="form-check-label" for="diablo">
+                                        <input class="form-check-input" type="checkbox" value="" id="Diablo"
+                                               data-value="25">
+                                        <label class="form-check-label" for="Diablo">
                                             AddToCart
                                         </label>
                                     </div>
@@ -220,8 +207,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="4cheeses" data-value="35">
-                                        <label class="form-check-label" for="4cheeses">
+                                        <input class="form-check-input" type="checkbox" value="" id="4Cheeses"
+                                               data-value="35">
+                                        <label class="form-check-label" for="4Cheeses">
                                             AddToCart
                                         </label>
                                     </div>
@@ -236,8 +224,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="naepolitana" data-value="34">
-                                        <label class="form-check-label" for="naepolitana">
+                                        <input class="form-check-input" type="checkbox" value="" id="Naepolitana"
+                                               data-value="34">
+                                        <label class="form-check-label" for="Naepolitana">
                                             AddToCart
                                         </label>
                                     </div>
@@ -250,8 +239,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="margheritta" data-value="25">
-                                        <label class="form-check-label" for="margheritta">
+                                        <input class="form-check-input" type="checkbox" value="" id="Margheritta"
+                                               data-value="25">
+                                        <label class="form-check-label" for="Margheritta">
                                             AddToCart
                                         </label>
                                     </div>
@@ -264,8 +254,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="barbeque" data-value="25">
-                                        <label class="form-check-label" for="barbeque">
+                                        <input class="form-check-input" type="checkbox" value="" id="Barbeque"
+                                               data-value="25">
+                                        <label class="form-check-label" for="Barbeque">
                                             AddToCart
                                         </label>
                                     </div>
@@ -284,8 +275,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="burg_4ch" data-value="25">
-                                        <label class="form-check-label" for="burg_4ch">
+                                        <input class="form-check-input" type="checkbox" value="" id="4Cheese"
+                                               data-value="25">
+                                        <label class="form-check-label" for="4Cheese">
                                             AddToCart
                                         </label>
                                     </div>
@@ -298,8 +290,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="burg_avocado" data-value="15">
-                                        <label class="form-check-label" for="burg_avocado">
+                                        <input class="form-check-input" type="checkbox" value="" id="Avocado"
+                                               data-value="15">
+                                        <label class="form-check-label" for="Avocado">
                                             AddToCart
                                         </label>
                                     </div>
@@ -312,8 +305,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="burg_beef" data-value="16">
-                                        <label class="form-check-label" for="burg_beef">
+                                        <input class="form-check-input" type="checkbox" value="" id="Beef"
+                                               data-value="16">
+                                        <label class="form-check-label" for="Beef">
                                             AddToCart
                                         </label>
                                     </div>
@@ -328,8 +322,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="burg_blue" data-value="17">
-                                        <label class="form-check-label" for="burg_blue">
+                                        <input class="form-check-input" type="checkbox" value="" id="Blue"
+                                               data-value="17">
+                                        <label class="form-check-label" for="Blue">
                                             AddToCart
                                         </label>
                                     </div>
@@ -342,8 +337,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="burg_cheese" data-value="45">
-                                        <label class="form-check-label" for="burg_cheese">
+                                        <input class="form-check-input" type="checkbox" value="" id="Cheese"
+                                               data-value="45">
+                                        <label class="form-check-label" for="Cheese">
                                             AddToCart
                                         </label>
                                     </div>
@@ -356,8 +352,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="burg_crispy" data-value="45">
-                                        <label class="form-check-label" for="burg_crispy">
+                                        <input class="form-check-input" type="checkbox" value="" id="Crispy"
+                                               data-value="45">
+                                        <label class="form-check-label" for="Crispy">
                                             AddToCart
                                         </label>
                                     </div>
@@ -376,8 +373,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="sushi_california" data-value="45">
-                                        <label class="form-check-label" for="sushi_california">
+                                        <input class="form-check-input" type="checkbox" value="" id="California"
+                                               data-value="45">
+                                        <label class="form-check-label" for="California">
                                             AddToCart
                                         </label>
                                     </div>
@@ -390,8 +388,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="sushi_ebi" data-value="45">
-                                        <label class="form-check-label" for="sushi_ebi">
+                                        <input class="form-check-input" type="checkbox" value="" id="Ebi"
+                                               data-value="45">
+                                        <label class="form-check-label" for="Ebi">
                                             AddToCart
                                         </label>
                                     </div>
@@ -404,8 +403,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="sushi_gei" data-value="45">
-                                        <label class="form-check-label" for="sushi_gei">
+                                        <input class="form-check-input" type="checkbox" value="" id="Geisha"
+                                               data-value="45">
+                                        <label class="form-check-label" for="Geisha">
                                             AddToCart
                                         </label>
                                     </div>
@@ -420,8 +420,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="sushi_maguromaki" data-value="45">
-                                        <label class="form-check-label" for="sushi_maguromaki">
+                                        <input class="form-check-input" type="checkbox" value="" id="Maguromaki"
+                                               data-value="45">
+                                        <label class="form-check-label" for="Maguromaki">
                                             AddToCart
                                         </label>
                                     </div>
@@ -434,8 +435,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="sushi_philad" data-value="45">
-                                        <label class="form-check-label" for="sushi_philad">
+                                        <input class="form-check-input" type="checkbox" value="" id="Philadelphia"
+                                               data-value="45">
+                                        <label class="form-check-label" for="Philadelphia">
                                             AddToCart
                                         </label>
                                     </div>
@@ -448,8 +450,9 @@
                                     <p>Aperiam tempore sit,perferendis numquam repudiandae porro voluptate dicta saepe
                                         facilis.</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="sushi_volcano" data-value="45">
-                                        <label class="form-check-label" for="sushi_volcano">
+                                        <input class="form-check-input" type="checkbox" value="" id="Volcano"
+                                               data-value="45">
+                                        <label class="form-check-label" for="Volcano">
                                             AddToCart
                                         </label>
                                     </div>

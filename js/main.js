@@ -131,19 +131,36 @@ $(function () {
     //Cart
 
     let order = [];
+    let items = [];
 
     $(".form-check-input").change(function () {
         if (this.checked) {
             updateCart(this);
-            console.log(order);
         }
     });
 
     const updateCart = (item) => {
         let initialCount = parseInt(document.getElementById("cart_count").innerHTML);
-        let items = [];
+        let ul = document.querySelector(".cart_content");
+        let li = document.createElement("li");
         items.push(item.id + ":" + item.getAttribute("data-value"));
         order.push(items);
         document.getElementById("cart_count").innerHTML = initialCount + 1;
+        li.appendChild(document.createTextNode(item.id + " " + item.getAttribute("data-value") + " lei"));
+        ul.appendChild(li);
     };
+
+    document.getElementById("hz").addEventListener("click", function (e) {
+        let tgt = e.target;
+        if (tgt.tagName.toUpperCase() == "LI") {
+            tgt.parentNode.removeChild(tgt);
+            //optimize this DRY
+            let initialCount = parseInt(document.getElementById("cart_count").innerHTML);
+            document.getElementById("cart_count").innerHTML = initialCount - 1;
+            //will add remove from array later!
+        }
+    });
+
+    // to do - order button to send to telegram group.
+
 });

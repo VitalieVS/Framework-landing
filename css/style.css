@@ -23,9 +23,20 @@ ol {
     margin: 0;
 }
 
-mark{
+mark {
     background-color: transparent;
     color: white;
+}
+
+.dropdown-menu {
+    margin-left: -280%;
+    width: 300px;
+}
+
+.cart_content li {
+    color: black;
+    background-color: whitesmoke;
+    margin: 4px;
 }
 
 .nav-list li a:before {
